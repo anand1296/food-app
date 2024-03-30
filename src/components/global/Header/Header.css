@@ -1,0 +1,50 @@
+.header-wrapper {
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: #fff;
+    z-index: 1000;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper .logo {
+    height: 60px;
+    animation: logo-rotate 0.5s;
+}
+
+@keyframes logo-rotate {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.header-wrapper .logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-wrapper .links > ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.header-wrapper .links > ul > li{
+    list-style-type: none;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-wrapper .links > ul > li:hover {
+    transform: scale(0.9);
+}

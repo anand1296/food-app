@@ -1,0 +1,10 @@
+.res-cards-wrapper {
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}

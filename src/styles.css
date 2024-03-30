@@ -1,0 +1,64 @@
+main {
+    top: 80px;
+    position: relative;
+    height: 100%;
+}
+
+.modal {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    background-color: white;
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 12px;
+    position:  fixed;
+    width: 250px;
+    top: 70px;
+    left: calc(50% - 125px);
+    /* bottom: 70px; */
+    padding: 1rem;
+    min-height: 200px;
+  }
+
+.default-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers::-webkit-scrollbar, .modal .modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin: 0.4rem 0;
+}
+
+.btn.primary {
+    background-color: #f7941e;
+    border: 1px solid #f7941e;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    color: #f7941e;
+    background-color: #fff;
+}
+
+.btn.default {
+    border: 1px solid darkgray;
+    color: darkgray;
+    background-color: #fff;
+}
+
+.btn.default:hover {
+    background-color: darkgray;
+    border: 1px solid darkgray;
+    color: #fff;
+}

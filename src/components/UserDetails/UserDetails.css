@@ -1,0 +1,20 @@
+.primary-details, .secondary-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: inset;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
